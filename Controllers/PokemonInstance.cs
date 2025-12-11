@@ -7,7 +7,6 @@ public class PokemonInstance{
     public string Objet{get; set;}
     public bool Shiny {get; set;}
     public int Gender {get;set;}
-    // La altura se muk
     public double Height{get;set;}
     public int Level{get;set;}
     public double ExpNextLevel{get;set;}

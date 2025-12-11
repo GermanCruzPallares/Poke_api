@@ -12,13 +12,14 @@ public class Pokemon{
     public double SizeScale{get;set;}
     public string[] Types { get; } = new string[2];    
     public string UrlImage{get;} 
-    
     public PokemonStats PokemonStats{get;}
 
-     public Pokemon(int id, string name, int pokedexNumber, string[] types, string urlImage,PokemonStats stats)
+     public Pokemon(int id, string name, int pokedexNumber, string[] types, string urlImage,int genderRate,int sizeScale,PokemonStats stats)
     {
         this.Id = id;
         this.Name = name;
+        this.GenderRate = genderRate;
+        this.SizeScale = sizeScale;
         this.PokedexNumber = pokedexNumber;
         this.UrlImage = urlImage;
         this.Types = types;
