@@ -1,6 +1,7 @@
 namespace Poke_Api.Models;
 
 public class PokemonStats{
+    public int IdPokemon{get;}
     public int HP{get;}
     public int Defense{get;}
     public int Attack{get;}
@@ -8,7 +9,8 @@ public class PokemonStats{
     public int SpDeef{get;} 
     public int Speed {get;}
 
-    public  PokemonStats(int hp, int defense, int attack,int spAttack,int spSpeed,int speed){
+    public  PokemonStats(int idPokemon, int hp, int defense, int attack,int spAttack,int spSpeed,int speed){
+        this.IdPokemon = idPokemon;
         this.HP = hp;
         this.Defense = defense;
         this.Attack = attack;

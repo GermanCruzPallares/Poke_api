@@ -3,7 +3,7 @@ using System.Security.Cryptography.X509Certificates;
 namespace Poke_Api.Models;
 
 public class Pokemon{
-    public int Id { get; }
+    public int Id {get;}
     public string Name{get;}
     public int PokedexNumber{get;}
     //-1 = Sin género, 0 = 100% Macho, 11 = 100% Hembra
