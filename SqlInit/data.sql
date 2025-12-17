@@ -36,9 +36,9 @@ CREATE TABLE PokemonInstance(
        level INT NOT NULL,
        expNextLevel DECIMAL NOT NULL,
        pokemonCageId INT,
-       pokedexNumber
+       idPokemon INT,
        FOREIGN KEY (pokemonCageId) REFERENCES PokemonCage(trainerId),
-       FOREIGN KEY (pokedexNumber) REFERENCES Pokemon(pokedexNumber)
+       FOREIGN KEY (idPokemon) REFERENCES Pokemon(id)
 );
 CREATE TABLE PokemonCage(
        id INT PRIMARY KEY IDENTITY(1,1),
